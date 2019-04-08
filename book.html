@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Book Now</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/footer.css" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="book-image">
+        <div id="container">
+            <div id="site-header">
+                <div class="logo">
+                    <img src="images/sweetsavour1.png"  alt="main site logo" />
+                </div>
+                <div class="nav">  
+                    <ul class="navbar-links">
+                        <li><a href="index.html">
+                            Home
+                        </a></li>
+                        <li><a href="menu-page.html">
+                            Menu
+                        </a> </li>
+                        <li><a class="active" href="book.html">
+                            Book
+                        </a></li>
+                        <li><a href="#footer">
+                            Contact
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="book-content">
+                We have you covered with our round the clock services. 
+                It's just a click away. Book a reservation from our 
+                designated spots. Please fill the form below.
+            </p>
+            <p class="book-content">
+                Have a special order to make?
+                We deliver your meal to you wherever you are. Hot and tasty! Simply tell us how
+                you want it and what you want and delivery address. You can easily pay on delivery
+                or make transfer to our bank account.
+            </p>
+
+            <form action="booking_page.php" method="POST" class="booking-form">
+
+                <div class="form">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+
+                <div class="form">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Last name..">
+                </div>
+
+                <div class="form">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Home address..">
+                </div>
+
+                <div class="form">
+                    <label for="special_order">Special Order</label>
+                    <input type="text" id="special_order" style="height:100px;"
+                    name="special_order" placeholder="Your special order..">
+                </div>
+
+                <div class="form">
+                    <label for="delivery_address">Delivery address</label>
+                    <input type="text" id="special_order" style="height:70px;"
+                    name="delivery_address" placeholder="Delivery address..">
+                </div>
+
+                <div class="form">
+                    <label for="table">Table Type</label>
+                    <select id="table" name="table">
+                        <option value="VVIP">VVIP</option>
+                        <option value="VIP">VIP</option>
+                        <option value="Delux">Delux</option>
+                        <option value="Regular">Regular</option>
+                    </select>
+                </div>
+
+                <div class="form">
+                    <p>Persons</p>
+                    <label class="radio">1-2
+                        <input type="radio" name="radio" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                                  
+                    <label class="radio">2-4
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                                  
+                    <label class="radio">4-6
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                                  
+                    <label class="radio">6 or More
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>   
+                </div>
+
+                <div class="form">
+                    <label for="Time">Time and Date</label>
+                    <input type="datetime-local" id="datetime" />
+                </div>
+                
+                <div class="booked-btn">
+                    <button type="button" id="booked-btn">
+                        Reserve
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="footer-distributed" id="footer">
+
+        <div class="footer-left">
+
+            <h3>Sweet<span>savour</span></h3>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                ·
+                <a href="menu-page.html">menu</a>
+                ·
+                <a href="book.html">Reservation</a>
+                ·
+                <a href="#footer">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Sweet Savour &copy; 2018</p>
+
+			<div class="footer-icons">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-right">
+
+            <p>Contact Us</p>
+
+            <form action="#" method="#">
+
+                <input type="text" name="email" placeholder="Email" />
+                <textarea name="message" placeholder="Message"></textarea>
+                <a href="#"><button>Send</button></a>
+
+            </form>
+
+        </div>
+
+    </footer>
+</body>
+</html>
