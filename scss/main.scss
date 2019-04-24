@@ -1,19 +1,24 @@
 @import '../scss/partials/variables';
+@import '../css/normalize.css';
+@import '../css/sequence-theme.two-up.css';
+@import '../scss/partials/mixins';
+@import '../scss/partials/variables';
+@import '../scss/partials/media-queries';
 
 @import url('https://fonts.googleapis.com/css?family=Courgette|Lato:300|Lora:700');
 
   
 body {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.4;
-    letter-spacing: 0.02em;
-    overflow-x: hidden;
-    background: $light-gray;
-
-    font-family: 'Courgette', cursive; /*hand writing*/
-    font-family: 'Lato', sans-serif;
-    font-family: 'Lora', serif;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  overflow-x: hidden;
+  background: $white;
+  font-family: 'Courgette', cursive; /*hand writing*/
+  font-family: 'Lato', sans-serif;
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
   }
   :root {
     box-sizing: border-box;
