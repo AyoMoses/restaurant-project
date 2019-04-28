@@ -3,6 +3,7 @@
 @import '../css/footer.css';
 @import '../scss/partials/mixins';
 @import '../scss/partials/media-queries';
+@import '../css/navbar.css';
 
 @import url('https://fonts.googleapis.com/css?family=Courgette|Lato:300|Lora:700');
 
@@ -44,21 +45,6 @@
   font-family: 'Lora', serif;
 }
 
-  a{ 
-    text-decoration: none;
-    // color: $medium-purple;
-    transition: color 0.3s ease-out;
-  
-    &:hover {
-    //   color: $dark-purple;
-    }
-    &:visited {
-    //   color: brand-purple;
-    }
-    &:focus {
-    //   color: $header-hover;
-    }
-  }
 
 body {
   font-size: 16px;
@@ -69,14 +55,9 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  text-align: center;
   height: 100%;
 }
-body * + * {
-  margin-bottom: 2em;
-}
+
 
 :root {
   box-sizing: border-box;
