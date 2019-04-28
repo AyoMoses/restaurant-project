@@ -1,11 +1,19 @@
+@import '../scss/partials/variables';
 @mixin deskTopFirst($media) {
     @media screen and (max-width: $media/16+em) { @content; }
 }
 
+.nav-background {
+    background: url(../images/hero-image.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+}
+
 nav {
     height: 10vh;
-    margin: 0;
-    background: rgb(231, 9, 46);
+    background: transparent;
 
     @include deskTopFirst(768) {
         .line {
@@ -51,15 +59,16 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-left: auto; //The margin from left acts like float
+    transition: color 0.3s linear;
 
     li a {
-        color: white;
+        color: $white;
         text-decoration: none;
         font-size: 16px;
         transition: color 0.2s linear;
 
         &:hover {
-            color: black;
+            color: lighten($color: $brand-red, $amount: 10%);
         }
     }
     
