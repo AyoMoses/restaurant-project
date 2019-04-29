@@ -16,22 +16,6 @@
     border-bottom-right-radius: 80% 20%;
 }
 
-
-.test {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-        width: 200px;
-        transition: all .6s ease-out;
-
-        &:hover {
-            transform: scale(3.0);
-            position: absolute;
-        }
-    }
-}
-
 .nav-site__logo {
     position: absolute;
     top: 1%;
