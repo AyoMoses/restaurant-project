@@ -92,6 +92,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora', serif;
   color: $brand-font;
+  margin: 0;
+  padding: 0;
+}
+//adding margin 0 and padding 0 to HEADERS, UL AND LI REMOVES ANY BUG OF 10PX MARGIN AT THE PAGE TOP
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 .fonts-failed body {
