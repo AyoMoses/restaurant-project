@@ -1,9 +1,34 @@
 .nav-background {
-  background: url(../images/hero-image.jpg) no-repeat;
+  background: url(../images/hero_index.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 90vh;
-  position: relative; }
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  border-bottom-left-radius: 80% 20%;
+  border-bottom-right-radius: 80% 20%; }
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .test img {
+    width: 200px;
+    transition: all .6s ease-out; }
+    .test img:hover {
+      transform: scale(3);
+      position: absolute; }
+
+.nav-site__logo {
+  position: absolute;
+  top: 1%;
+  left: 1%; }
+  .nav-site__logo img {
+    width: 60px;
+    height: 60px; }
+  .nav-site__logo a {
+    color: #ffffff; }
 
 nav {
   height: 10vh;
@@ -54,7 +79,7 @@ nav {
   @media screen and (max-width: 48em) {
     .nav-links {
       position: fixed;
-      background: linear-gradient(to bottom, #e7092e, #f02244);
+      background: linear-gradient(to bottom, #f41335, #f6445f);
       height: 100vh;
       width: 100%;
       flex-direction: column;

@@ -22,7 +22,6 @@ body {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0.02em;
-  overflow: hidden;
   background: #ffffff;
   font-family: 'Lato', sans-serif;
   margin: 0;
@@ -76,6 +75,9 @@ p {
   text-align: center;
   text-justify: inter-word;
   color: #1c1532; }
+
+a {
+  text-decoration: none; }
 
 img {
   border: none;
