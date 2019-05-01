@@ -131,3 +131,21 @@ nav {
     }
 
 }
+
+
+.cta--container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    background: red;
+    margin: auto auto;
+
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+.cta__button {
+    color: red;
+}

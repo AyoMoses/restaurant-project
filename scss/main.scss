@@ -1,7 +1,7 @@
 @import '../scss/partials/variables';
 @import '../css/normalize.css';
 @import '../scss/partials/media-queries';
-@import '../css/navbar.css';
+@import '../css/header.css';
 
 @import url('https://fonts.googleapis.com/css?family=Courgette|Lato:300|Lora:700');
 
@@ -88,7 +88,36 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba($color: $brand-red, $alpha: .7);
 }
+
+p {
+  font-family: 'Lato' sans-serif;
+  color: $font-color;
+  text-align: center;
+  text-justify: inter-word;
+  color: $font-color;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: darken($color: $brand-red, $amount: 10%);
+  }
+  &:focus {
+    color: lighten($color: $brand-red, $amount: 8%);
+  }
+  &:visited {
+    color: lighten($color: $brand-red, $amount: 4%);
+  }
+}
   
+img {
+  border: none;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
   
   
 h1, h2, h3, h4, h5, h6 {
@@ -115,25 +144,7 @@ li {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-p {
-  font-family: 'Lato' sans-serif;
-  color: $font-color;
-  text-align: center;
-  text-justify: inter-word;
-  color: $font-color;
-}
 
-a {
-  text-decoration: none;
-}
-  
-img {
-  border: none;
-  max-width: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
   
 /*scroll to top*/
   
