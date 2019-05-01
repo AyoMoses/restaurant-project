@@ -53,6 +53,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  max-width: 100%;
+  width: 100%;
 }
 
 
@@ -94,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $brand-font;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 //adding margin 0 and padding 0 to HEADERS, UL AND LI REMOVES ANY BUG OF 10PX MARGIN AT THE PAGE TOP
 ul,
