@@ -1,112 +1,78 @@
-.nav-background {
-  background: url(../images/hero_index.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 90vh;
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  border-bottom-left-radius: 80% 20%;
-  border-bottom-right-radius: 80% 20%; }
+/*
+Error: Undefined variable: "$font-color".
+        on line 4 of scss/partials/_variables.scss
+        from line 1 of scss/header.scss
 
-.nav-site__logo {
-  position: absolute;
-  top: 1%;
-  left: 1%; }
-  .nav-site__logo img {
-    width: 60px;
-    height: 60px; }
-  .nav-site__logo a {
-    color: #ffffff; }
+1: @import '../scss/partials/variables';
+2: @mixin deskTopFirst($media) {
+3:     @media screen and (max-width: $media/16+em) { @content; }
+4: }
+5: 
+6: .nav-background {
+7:     background: url(../images/hero_index.jpg) no-repeat;
+8:     background-position: center;
+9:     background-size: cover;
 
-nav {
-  height: 10vh;
-  background: transparent; }
-  @media screen and (max-width: 48em) {
-    nav .line {
-      width: 30px;
-      height: 3px;
-      background: white;
-      margin: 5px; }
-    nav nav {
-      position: relative; }
-    nav .hamburger {
-      position: absolute;
-      cursor: pointer;
-      right: 5%;
-      top: 2.5%;
-      outline: none;
-      z-index: 3; }
-      nav .hamburger:after {
-        opacity: 0;
-        content: 'x';
-        position: absolute;
-        top: 2.5%;
-        right: 5%;
-        font-size: 3em;
-        line-height: 0;
-        transition: opacity 0.4s ease-out; }
-      nav .hamburger:active {
-        transform: translateY(2px); } }
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  width: 50%;
-  height: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: auto;
-  transition: color 0.3s linear; }
-  .nav-links li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.2s linear; }
-    .nav-links li a:hover {
-      color: #f6445f; }
-  @media screen and (max-width: 48em) {
-    .nav-links {
-      position: fixed;
-      background: linear-gradient(to bottom, #f41335, #f6445f);
-      height: 100vh;
-      width: 100%;
-      flex-direction: column;
-      clip-path: circle(100px at 90% -30%);
-      -webkit-clip-path: circle(100px at 90% -30%);
-      transition: all 1s ease-out;
-      pointer-events: none;
-      z-index: 2; }
-      .nav-links.open {
-        clip-path: circle(1020px at 90% -20%);
-        -webkit-clip-path: circle(1020px at 90% -20%);
-        pointer-events: all; }
-      .nav-links li {
-        opacity: 0; }
-      .nav-links li:nth-child(1) {
-        transition: all 0.5s ease 0.2s; }
-      .nav-links li:nth-child(2) {
-        transition: all 0.5s ease 0.4s; }
-      .nav-links li:nth-child(3) {
-        transition: all 0.5s ease 0.6s; }
-      .nav-links li:nth-child(4) {
-        transition: all 0.5s ease 0.8s; }
-      .nav-links li.fade {
-        opacity: 1; } }
-
-.cta--container {
-  display: flex;
-  justify-content: center;
-  flex-flow: column nowrap;
-  align-items: center;
-  text-align: center;
-  background: #d8002f;
-  position: absolute;
-  top: 25%;
-  bottom: 25%;
-  left: 35%; }
-
-.cta__button {
-  color: red; }
-
-/*# sourceMappingURL=header.css.map */
+Backtrace:
+scss/partials/_variables.scss:4
+scss/header.scss:1
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/tree/list_literal.rb:75:in `map'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/tree/list_literal.rb:75:in `_perform'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:478:in `visit_variable'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:325:in `map'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby26/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$font-color\".\A         on line 4 of scss/partials/_variables.scss\A         from line 1 of scss/header.scss\A \A 1: @import '../scss/partials/variables';\A 2: @mixin deskTopFirst($media) {\A 3:     @media screen and (max-width: $media/16+em) { @content; }\A 4: }\A 5: \A 6: .nav-background {\A 7:     background: url(../images/hero_index.jpg) no-repeat;\A 8:     background-position: center;\A 9:     background-size: cover;"; }
