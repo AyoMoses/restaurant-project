@@ -3,7 +3,6 @@
 @import '../scss/partials/media-queries';
 @import '../css/header.css';
 @import '../css/animate.css';
-@import '..css/palette.css';
 @import url('https://fonts.googleapis.com/css?family=Courgette|Lato:300|Lora:700');
 
 @mixin deskTopFirst($media) {
@@ -38,12 +37,6 @@
   url(https://fonts.gstatic.com/roboto.woff) format('woff');
   font-display: swap;
 }
-
-.d {
-  font-family: 'Courgette', cursive; /*hand writing*/
-  font-family: 'Lora', serif;
-}
-
 
 body {
   font-size: 16px;
