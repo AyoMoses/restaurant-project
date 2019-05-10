@@ -53,13 +53,15 @@ body {
 
 
 :root {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 *, 
 ::before,
 ::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
   
 ::-webkit-scrollbar {
@@ -109,8 +111,10 @@ img {
   border: none;
   max-width: 100%;
   width: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
   
   
@@ -156,7 +160,6 @@ li {
   width: 3.125em;
   z-index: 100;
   -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
   
   &:hover{
@@ -167,12 +170,12 @@ li {
     border: none;
     text-decoration: none;
     outline: none;
-    -webkit-box-shadow: $box-shadow-2; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow: $box-shadow-2; /* Firefox 3.5 - 3.6 */
+    -webkit-box-shadow: $box-shadow-2; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */ /* Firefox 3.5 - 3.6 */
     box-shadow: $box-shadow-2; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   }
   &:focus {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 .fa-arrow-up {

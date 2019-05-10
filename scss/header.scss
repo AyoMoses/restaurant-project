@@ -62,29 +62,38 @@ nav {
                 right: 5%;
                 font-size: 3em;
                 line-height: 0;
+                -webkit-transition: opacity 0.4s ease-out;
                 transition: opacity 0.4s ease-out;
             }
             &:active {
-                transform: translateY(2px);
+                -webkit-transform: translateY(2px);
+                        transform: translateY(2px);
             }
         } 
     }
 }
 
 .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     width: 50%; //Takes up only 50% of available space of 100
     height: 100%;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: auto; //The margin from left acts like float
+    -webkit-transition: color 0.3s linear;
     transition: color 0.3s linear;
 
     li a {
         color: $white;
         text-decoration: none;
         font-size: 16px;
+        -webkit-transition: color 0.2s linear;
         transition: color 0.2s linear;
 
         &:hover {
@@ -95,12 +104,17 @@ nav {
 
     @include deskTopFirst(768) {
         position: fixed;
+        background: -webkit-gradient(linear, left top, left bottom, from($brand-red), to(lighten($brand-red, 10%)));
         background: linear-gradient(to bottom, $brand-red, lighten($brand-red, 10%));
         height: 100vh;
         width: 100%;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         clip-path: circle(100px at 90% -30%);
         -webkit-clip-path: circle(100px at 90% -30%);
+        -webkit-transition: all 1s ease-out;
         transition: all 1s ease-out;
         pointer-events: none;
         z-index: 2;
@@ -114,15 +128,19 @@ nav {
             opacity: 0;
         }
         & li:nth-child(1) {
+            -webkit-transition: all 0.5s ease 0.2s;
             transition: all 0.5s ease 0.2s;
         }
         & li:nth-child(2) {
+            -webkit-transition: all 0.5s ease 0.4s;
             transition: all 0.5s ease 0.4s;
         }
         & li:nth-child(3) {
+            -webkit-transition: all 0.5s ease 0.6s;
             transition: all 0.5s ease 0.6s;
         }
         & li:nth-child(4) {
+            -webkit-transition: all 0.5s ease 0.8s;
             transition: all 0.5s ease 0.8s;
         }
         li.fade {
@@ -134,10 +152,19 @@ nav {
 
 
 .cta--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-flow: column nowrap;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     background: #d8002f;
 
